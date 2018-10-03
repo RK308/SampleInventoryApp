@@ -40,12 +40,12 @@ public class BookDbHelper extends SQLiteOpenHelper {
          * Create a String constant that contains the SQL statement to create the Books table
          *
          * CREATE TABLE books ( _ID INTEGER PRIMARY KEY AUTOINCREMENT,
-         *                     product name TEXT NOT NULL,
+         *                     product_name TEXT NOT NULL,
          *                     price INTEGER NOT NULL,
          *                     quantity INTEGER NOT NULL DEFAULT 0,
-         *                     type STRING NOT NULL,
-         *                     supplier name TEXT NOT NULL,
-         *                     supplier phone number INTEGER NOT NULL);
+         *                     type INTEGER NOT NULL,
+         *                     supplier_name TEXT NOT NULL,
+         *                     supplier_phone_number INTEGER NOT NULL);
          */
 
         String SQL_CREATE_BOOKS_TABLE = "CREATE TABLE " + BookEntry.TABLE_NAME + " ("
@@ -53,7 +53,7 @@ public class BookDbHelper extends SQLiteOpenHelper {
                 + BookEntry.COLUMN_BOOK_NAME + " TEXT NOT NULL, "
                 + BookEntry.COLUMN_BOOK_PRICE + " INTEGER NOT NULL, "
                 + BookEntry.COLUMN_BOOK_QUANTITY + " INTEGER NOT NULL DEFAULT 0, "
-                + BookEntry.COLUMN_BOOK_TYPE + "INTEGER NOT NULL,"
+                + BookEntry.COLUMN_BOOK_TYPE + " INTEGER NOT NULL, "
                 + BookEntry.COLUMN_SUPPLIER_NAME + " TEXT NOT NULL, "
                 + BookEntry.COLUMN_SUPPLIER_PHONE_NUMBER + " INTEGER NOT NULL);";
 
