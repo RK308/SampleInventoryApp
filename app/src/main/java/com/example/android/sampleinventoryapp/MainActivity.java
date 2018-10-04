@@ -32,11 +32,11 @@ public class MainActivity extends AppCompatActivity {
         mDbHelper = new BookDbHelper(this);
 
         // Dummy values
-        bookName = "Life of Pi";
-        price = 30;
-        quantity = 2;
-        supplierName = "Baker & Taylor";
-        supplierPhoneNumber = "310 223 6985";
+        bookName = getString(R.string.book_name);
+        price = getResources().getInteger(R.integer.price);
+        quantity = getResources().getInteger(R.integer.quantity);
+        supplierName = getString(R.string.supplier_name);
+        supplierPhoneNumber = getString(R.string.supplier_phone_number);
         bookType = BookEntry.BOOK_TYPE_FICTION;
 
     }

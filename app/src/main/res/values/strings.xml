@@ -2,4 +2,7 @@
     <string name="app_name">Inventory App</string>
     <string name="insert_option">Insert</string>
     <string name="read_option">Read</string>
+    <string name="book_name">Life of Pi</string>
+    <string name="supplier_name">Baker &amp; Taylor</string>
+    <string name="supplier_phone_number">310 223 6985</string>
 </resources>
