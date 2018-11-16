@@ -5,6 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.android.sampleinventoryapp.data.StoreContract.BookEntry;
+
 /**
   * Database helper fro Books app. Manages database creation and version management.
   */
